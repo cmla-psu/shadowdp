@@ -1,0 +1,9 @@
+(declare-fun |gapsparsevector::__SHADOWDP_v_epsilon| () Real)
+(declare-fun |gapsparsevector::NN| () Int)
+(declare-fun |gapsparsevector::count| () Int)
+(declare-fun |gapsparsevector::epsilon| () Real)
+
+gapsparsevector:
+(assert (<= |gapsparsevector::count| |gapsparsevector::NN|))
+(assert (>= |gapsparsevector::__SHADOWDP_v_epsilon| (* 0.5 |gapsparsevector::epsilon|)))
+(assert (= |gapsparsevector::__SHADOWDP_v_epsilon| (+ (* 0.5 |gapsparsevector::epsilon|) (* |gapsparsevector::count| (* |gapsparsevector::epsilon| (/ 0.5 |gapsparsevector::NN|))))))

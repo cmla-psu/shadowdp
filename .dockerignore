@@ -1,0 +1,13 @@
+*
+!examples/
+!shadowdp/
+!scripts/
+!tests/
+!.dockerignore
+!.gitignore
+!setup.cfg
+!setup.py
+!tox.ini
+!LICENSE
+!MANIFEST.in
+!README.md

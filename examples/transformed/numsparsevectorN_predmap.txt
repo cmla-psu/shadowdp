@@ -1,0 +1,10 @@
+(declare-fun |numsparsevectorN::__SHADOWDP_v_epsilon| () Real)
+(declare-fun |numsparsevectorN::NN| () Int)
+(declare-fun |numsparsevectorN::count| () Int)
+(declare-fun |numsparsevectorN::epsilon| () Real)
+
+numsparsevectorN:
+(assert (<= |numsparsevectorN::count| |numsparsevectorN::NN|))
+(assert (>= |numsparsevectorN::__SHADOWDP_v_epsilon| (* (/ 1 3) |numsparsevectorN::epsilon|)))
+(assert (<= |numsparsevectorN::__SHADOWDP_v_epsilon| |numsparsevectorN::epsilon|))
+(assert (= |numsparsevectorN::__SHADOWDP_v_epsilon| (+ (* (/ 1 3) |numsparsevectorN::epsilon|) (* |numsparsevectorN::count| (* |numsparsevectorN::epsilon| (/ (/ 2 3) |numsparsevectorN::NN|))))))

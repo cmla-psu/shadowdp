@@ -1,0 +1,55 @@
+# compiled python files
+*.pyc
+
+# macOS generated files
+.DS_STORE
+
+# temporary and log files
+*.tmp
+*.log
+
+# coverage generated files
+.coverage
+
+# ply generated files
+parser.out
+parsetab.py
+
+# jetBrains generated files
+.idea/
+
+# build files
+.cache/
+build/
+dist/
+*.egg-info/
+
+# tox generated files
+.tox/
+
+# python cache
+_pycache_/
+
+# Z3 library release files
+z3/
+
+# output figure
+*.pdf
+
+# coverage reports
+.coverage.*
+
+# pytest cache
+.pytest_cache
+
+# cpachecker folder
+cpachecker*/
+CPAChecker*/
+output*/
+
+# virtual environment
+venv/
+
+# transformed code
+examples/original/*_t.c
+!examples/transformed/
