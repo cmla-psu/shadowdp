@@ -1,7 +1,5 @@
 # ShadowDP
 
-[![Github Actions](https://github.com/yxwangcs/shadowdp/workflows/build/badge.svg)](https://github.com/yxwangcs/shadowdp/actions?workflow=build) [![codecov](https://codecov.io/gh/yxwangcs/shadowdp/branch/master/graph/badge.svg)](https://codecov.io/gh/yxwangcs/shadowdp)
-
 A verification tool for differentially private algorithms based on a new proving technique "Shadow Execution".
 
 ## Getting Started
@@ -13,7 +11,8 @@ As described in Section 6 of our paper, ShadowDP consists of two components: (1)
 Using docker is the easiest way to set everything up and running. Run
 
 ```bash
-docker run -it --rm cmlapsu/shadowdp
+docker build -t shadowdp .
+docker exec -it shadowdp /bin/bash
 ```
 
 Then you'll be in a shell inside a docker container with ShadowDP ready to use.
